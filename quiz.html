@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Опрос — Подбор витаминов</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/quiz.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">VitaminQuiz</div>
+      <div class="nav-links">
+        <a href="index.html">Главная</a>
+        <a href="quiz.html" class="active">Пройти тест</a>
+        <a href="profile.html">Личный кабинет</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="quiz-container">
+    <div class="progress-bar">
+      <div class="progress" id="progress"></div>
+    </div>
+
+    <div class="quiz-content">
+      <h2 id="questionText"></h2>
+      <div id="optionsContainer" class="options-container"></div>
+      
+      <div class="quiz-navigation">
+        <button id="prevButton" class="nav-button">Назад</button>
+        <button id="nextButton" class="nav-button">Далее</button>
+      </div>
+    </div>
+  </main>
+
+  <script src="js/quiz.js"></script>
+</body>
+</html>

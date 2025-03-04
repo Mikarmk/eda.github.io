@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Личный кабинет — VitaminQuiz</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/profile.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">VitaminQuiz</div>
+      <div class="nav-links">
+        <a href="index.html">Главная</a>
+        <a href="quiz.html">Пройти тест</a>
+        <a href="profile.html" class="active">Личный кабинет</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="profile-container">
+    <section class="user-info">
+      <img src="img/avatar.png" alt="Аватар пользователя" class="avatar">
+      <div class="user-details">
+        <h1>Добро пожаловать, <span id="userName">Тони</span>!</h1>
+        <p><span id="userEmail">totonystark@starkind.com</span></p>
+      </div>
+    </section>
+
+    <section class="saved-results">
+      <h2>Сохраненные результаты тестов</h2>
+      <div id="resultsList">
+        <!-- Здесь будут выводиться результаты -->
+      </div>
+      <button id="clearResultsButton" class="clear-button">Очистить сохраненные результаты</button>
+    </section>
+  </main>
+
+  <script src="js/profile.js"></script>
+</body>
+</html>

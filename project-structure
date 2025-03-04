@@ -1,0 +1,16 @@
+vitamin-quiz/
+├── index.html
+├── profile.html
+├── quiz.html
+├── results.html
+├── css/
+│   ├── style.css
+│   ├── quiz.css
+│   └── profile.css
+├── js/
+│   ├── auth.js
+│   ├── quiz.js
+│   ├── results.js
+│   └── profile.js
+└── img/
+    └── vitamins/ 

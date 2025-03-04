@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Результаты — Подбор витаминов</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/results.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">VitaminQuiz</div>
+      <div class="nav-links">
+        <a href="index.html">Главная</a>
+        <a href="quiz.html">Пройти тест</a>
+        <a href="profile.html">Личный кабинет</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="results-container">
+    <h1>Ваши результаты</h1>
+    <div class="results-content">
+      <div id="vitaminResults"></div>
+      <div class="recommendations">
+        <h2>Рекомендации</h2>
+        <div id="recommendationsList"></div>
+      </div>
+      <div class="actions">
+        <button onclick="saveToProfile()" class="save-button">Сохранить в профиль</button>
+        <button onclick="window.print()" class="print-button">Распечатать</button>
+      </div>
+    </div>
+  </main>
+
+  <script src="js/results.js"></script>
+</body>
+</html>
