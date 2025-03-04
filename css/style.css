@@ -20,7 +20,6 @@
     background-color: var(--background-color);
   }
   
-  
   header {
     background-color: #fff;
     box-shadow: var(--shadow);
@@ -111,7 +110,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 2.5rem;
-    justify-items: center; /* Центрирование карточек */
+    justify-items: center;
   }
   
   .feature-card {
@@ -154,13 +153,57 @@
     box-shadow: var(--shadow);
   }
   
+  /* Адаптив для мобильных устройств */
   @media (max-width: 768px) {
+    nav {
+      padding: 1rem;
+    }
+    
+    .logo {
+      font-size: 1.5rem;
+    }
+    
     .nav-links {
-      display: none;
+      display: none; /* Можно добавить мобильное меню при необходимости */
+    }
+    
+    .hero {
+      padding: 6rem 1rem 3rem;
     }
     
     .hero h1 {
       font-size: 2.2rem;
+    }
+    
+    .hero p {
+      font-size: 1rem;
+    }
+    
+    .features {
+      padding: 2rem 1rem;
+    }
+    
+    .features h2 {
+      font-size: 1.8rem;
+    }
+    
+    .features-grid {
+      gap: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .hero h1 {
+      font-size: 2rem;
+    }
+    
+    .hero p {
+      font-size: 0.9rem;
+    }
+    
+    .cta-button {
+      padding: 0.7rem 1.2rem;
+      font-size: 0.9rem;
     }
   }
   

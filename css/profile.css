@@ -75,3 +75,29 @@
     background-color: var(--secondary-color);
   }
   
+  /* Адаптив для мобильных устройств */
+  @media (max-width: 768px) {
+    .profile-container {
+      padding: 1rem;
+    }
+    
+    .user-info {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    
+    .avatar {
+      width: 80px;
+      height: 80px;
+    }
+    
+    .user-details h1 {
+      font-size: 1.6rem;
+    }
+    
+    .user-details p {
+      font-size: 0.9rem;
+    }
+  }
+  
